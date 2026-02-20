@@ -18,5 +18,19 @@ aleatorio=$(expr $RANDOM % 4)
         1) canasta="2 puntos";;
         3) canasta="3 puntos";;
     esac
-    echo "Turno $turno: $equipo anota $canasta"
+    total_equipo=$(expr $total_equipo + $canasta)
+    echo "Turno $turno: $equipo anota $canasta puntos"
+
+    # RIVAL
+aleatorio=$(expr $RANDOM % 4)
+    if [ $aleatorio -eq 1 ]
+    then
+        canasta=2
+    else
+       canasta=$aleatorio
+    fi
+    total_rival=$(expr $total_rival + $canasta)
+    echo "Turno $turno: $rival anota $canasta puntos"
+    sleep 1
 done
+echo "Puntuacion final: $equipo $total_equipo - $rival $total_rival"
