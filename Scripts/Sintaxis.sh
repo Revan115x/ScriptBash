@@ -1,5 +1,6 @@
 #Java	Bash
 #COMPARADORES
+#J  bash
 >	-gt
 <	-lt
 >=	-ge
@@ -7,3 +8,7 @@
 ==	-eq
 !=	-ne
 #
+#comparar texto, poner comillas y =
+# "$usuario" = "$nombre"
+
+#calular resto=$(expr $num % 2)
