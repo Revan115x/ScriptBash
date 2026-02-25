@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# Script para actualizar GitHub automáticamente
+REPO="/home/inf1/Desktop/Programacion/ScriptBash"
 
-cd /home/inf1/Desktop/Programacion/ScriptBash || exit
+cd "$REPO" || exit 1
 
 git add .
 git commit -m "Actualización automática" || true
