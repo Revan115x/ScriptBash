@@ -11,7 +11,8 @@
 #comparar texto, poner comillas y =
 # "$usuario" = "$nombre"
 
-#calular resto=$(expr $num % 2)
+#calular 
+resto=$(expr $num % 2)
 
 #if else
 if [$a -lt $b]
