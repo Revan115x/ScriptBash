@@ -1,7 +1,5 @@
 #!/bin/bash
 
-REPO="/home/inf1/Desktop/Programacion/ScriptBash"
+cd /home/inf1/Desktop/Programacion/ScriptBash || exit 1
 
-cd "$REPO" || exit 1
-
-git pull
+git pull || exit 0
