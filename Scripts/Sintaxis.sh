@@ -40,3 +40,12 @@ esac
 while [ condición ]; do
     # comandos a ejecutar
 done
+
+#bucle for
+for i in {1. .5}
+do
+  echo "Hai $i"
+done
+
+#multiplicar 
+resultado=$(expr $num \* $i)ee
